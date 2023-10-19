@@ -25,7 +25,6 @@ const listItemMarkup = () => {
     const listItem = document.createElement("li");
     listItem.classList.add("item");
     listItem.textContent = ingredients[i];
-    // console.log(listItem);
     list.appendChild(listItem);
   }
 };
