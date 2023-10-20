@@ -28,7 +28,7 @@ categories.forEach((element) => {
 /********** 2nd variant **********/
 console.log("/****************************/");
 
-for (let i = 0; i <= categories.length; i++) {
+for (let i = 0; i < categories.length; i++) {
   const category = categories[i];
   console.log("Category:", category.firstElementChild.textContent);
   console.log("Elements:", category.lastElementChild.childElementCount);

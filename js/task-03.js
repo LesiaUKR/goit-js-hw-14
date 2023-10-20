@@ -26,11 +26,11 @@ const imageList = document.querySelector(".gallery");
 
 const galleryMarkup = images
   .map(
-    ({ url, alt }) =>
+    ({ url, alt }, idx) =>
       `<li class="gallery-item"><img class="image"src="${url}" alt="${alt}"/></li>`
   )
   .join("");
 
 console.dir(galleryMarkup);
 
-imageList.insertAdjacentHTML("beforeend", galleryMarkup);
+imageList.insertAdjacentHTML("afterbegin", galleryMarkup);
